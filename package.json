@@ -1,0 +1,15 @@
+{
+  "name": "multi-tenancy-aws-sdk",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.wdf.sap.corp:D059162/multi-tenancy-aws-sdk.git",
+  "author": "Tarek Becker <tarek.becker@sap.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  },
+  "peerDependencies": {
+    "aws-sdk": "^2.164.0"
+  }
+}
