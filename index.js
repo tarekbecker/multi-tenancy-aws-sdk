@@ -17,6 +17,8 @@ DDBFactory.prototype.get = function get (tenant) {
   // check if credentials do not exist or are expired
   if (!this.ddbcc[tenant] ||
     (this.ddbcc[tenant].acquired + duration < now - (duration / 10))) {
+    console.log(`No cached credentials for tenant ${tenant}.`)
+
     const params = {
       RoleArn: `arn:aws:iam::947257169342:role/tenant-${tenant}`,
       RoleSessionName: `${tenant}-${now}`,
