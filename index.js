@@ -29,6 +29,8 @@ DDBFactory.prototype.get = function get (tenant) {
           DurationSeconds: duration
         }
 
+        console.log('%j', params);
+
         this.ddbcc[tenant] = {
           acquired: now,
           promise: sts
