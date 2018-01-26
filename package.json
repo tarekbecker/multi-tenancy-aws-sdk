@@ -7,7 +7,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.5.1",
+    "lambda-helper": "https://github.com/tarekbecker/lambda-helper.git"
   },
   "peerDependencies": {
     "aws-sdk": "^2.164.0"
