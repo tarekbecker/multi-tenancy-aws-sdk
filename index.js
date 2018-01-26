@@ -15,7 +15,7 @@ function DDBFactory (region) {
 DDBFactory.prototype.get = function get (tenant) {
   return lambda.tenantInfo()
     .then(config => config[tenant])
-    .then(tenantinfo => {
+    .then(tenantInfo => {
       const now = new Date().getTime()
 
       // check if credentials do not exist or are expired
