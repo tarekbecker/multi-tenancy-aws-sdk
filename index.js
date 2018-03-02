@@ -8,7 +8,7 @@ const sts = new AWS.STS({ apiVersion: '2011-06-15' })
 const duration = 3600
 
 function DDBFactory (region) {
-  this.region = region || 'eu-central-1'
+  this.region = (region || process.env.AWS_DEFAULT_REGION) || 'eu-central-1'
   this.ddbcc = {}
 }
 
